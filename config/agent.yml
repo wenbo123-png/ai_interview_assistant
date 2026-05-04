@@ -1,0 +1,25 @@
+# =========================
+# Agent 调度配置（面试助手）
+# =========================
+
+# Agent 执行模式：react / direct
+# MVP 建议先 react，便于工具调度
+run_mode: react
+
+# 是否输出中间调试信息（工具调用、思考过程等）
+verbose: true
+
+# 工具调用的最大步数（防止循环调用）
+max_iterations: 6
+
+# 是否允许并行工具调用（MVP 先关掉，保持简单）
+allow_parallel_tools: false
+
+# 默认启用的工具列表（用于后续在 react_agent.py 里做注册控制）
+enabled_tools:
+  - parse_resume
+  - parse_jd
+  - retrieve_context
+  - generate_questions
+  - score_answer
+  - generate_followups

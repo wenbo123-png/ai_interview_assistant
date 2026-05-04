@@ -1,0 +1,14 @@
+# =========================
+# 应用全局配置
+# =========================
+
+# FastAPI 后端
+backend_host: "127.0.0.1"
+backend_port: 8000
+
+# Streamlit 前端
+frontend_port: 8501
+
+# 临时文件
+temp_upload_dir: "tmp_uploads"
+temp_file_max_age_hours: 24

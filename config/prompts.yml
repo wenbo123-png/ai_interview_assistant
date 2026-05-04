@@ -1,0 +1,47 @@
+# =========================
+# 面试助手主提示词配置
+# =========================
+
+# Agent 主系统提示词（面试助手场景）
+main_prompt_path: prompts/main_prompt.txt
+
+# RAG 检索问答提示词（后续 rag_service 使用）
+rag_query_prompt_path: prompts/rag_query_prompt.txt
+
+# 简历解析提示词
+resume_parse_prompt_path: prompts/resume_parse_prompt.txt
+
+# JD 解析提示词
+jd_parse_prompt_path: prompts/jd_parse_prompt.txt
+
+# 面试题生成提示词
+question_generation_prompt_path: prompts/question_generation_prompt.txt
+
+# 回答评分提示词
+answer_scoring_prompt_path: prompts/answer_scoring_prompt.txt
+
+# 追问生成提示词
+followup_prompt_path: prompts/followup_prompt.txt
+
+# 参考答案生成提示词
+reference_answer_prompt_path: prompts/reference_answer_prompt.txt
+
+# 查询改写提示词（RAG 检索优化）
+query_rewrite_prompt_path: prompts/query_rewrite_prompt.txt
+
+# 意图分类提示词（Agent 意图识别）
+intent_classify_prompt_path: prompts/intent_classify_prompt.txt
+
+# 模拟面试出题提示词（轻量版，只要题目不要答案）
+mock_interview_prompt_path: prompts/mock_interview_prompt.txt
+
+# 模拟面试最终总评提示词（个性化评语生成）
+final_evaluation_prompt_path: prompts/final_evaluation_prompt.txt
+
+
+# =========================
+# 兼容旧项目键名（建议暂时保留）
+# =========================
+
+# 旧 RAG 键，映射到新 RAG 提示词
+rag_summarize_prompt_path: prompts/rag_query_prompt.txt

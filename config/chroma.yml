@@ -1,0 +1,44 @@
+# 向量库集合名（固定知识库）
+collection_name: interview_assistant
+
+# 向量库存储目录
+persist_directory: chroma_db
+
+# 固定知识库原始文档目录
+data_path: data
+
+# 文档去重记录文件（MD5）
+md5_hex_store: md5.txt
+
+# 知识库允许导入的文件类型
+allow_knowledge_file_type: ["txt", "pdf"]
+
+# 检索返回条数
+k: 4
+
+# 文本切分参数（面试知识按题目/段落切分，适当放大 chunk 保留完整语义）
+chunk_size: 600
+chunk_overlap: 120
+separators: ["\n\n", "\n", ".", "!", "?", "。", "！", "？", " ", ""]
+
+# =========================
+# Hybrid Search 混合检索配置
+# =========================
+hybrid_search:
+  enabled: true
+  bm25_weight: 0.3       # BM25 关键词检索权重
+  vector_weight: 0.7     # 向量语义检索权重
+
+# =========================
+# Reranking 精排配置
+# =========================
+reranking:
+  enabled: true
+  # 使用 DashScope gte-rerank API，无需本地加载模型
+  top_n: 4  # 精排后保留的文档数
+
+# =========================
+# Query Rewriting 查询改写配置
+# =========================
+query_rewriting:
+  enabled: true

@@ -1,0 +1,19 @@
+# =========================
+# RAG / LLM 基础配置
+# =========================
+
+# 聊天模型
+chat_model_name: qwen3-max
+
+# 向量化模型
+embedding_model_name: text-embedding-v4
+
+# 生成参数
+temperature: 0.2
+max_tokens: 4096
+
+# 可选：后续不同任务可单独覆盖
+task_temperature:
+  question_generation: 0.3
+  answer_scoring: 0.1
+  followup_generation: 0.2

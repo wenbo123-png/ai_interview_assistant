@@ -1,0 +1,39 @@
+# =========================
+# 核心依赖
+# =========================
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-chroma>=0.2.0
+langchain-text-splitters>=0.3.0
+streamlit>=1.38.0
+pyyaml>=6.0
+
+# =========================
+# FastAPI 后端
+# =========================
+fastapi>=0.115.0         # Web 框架
+uvicorn>=0.32.0          # ASGI 服务器
+httpx>=0.27.0            # HTTP 客户端（前端调后端用）
+python-multipart>=0.0.12 # FastAPI 文件上传支持
+
+# DashScope（通义千问 LLM + Embedding）
+dashscope>=1.20.0
+langchain-community[tongyi]
+
+# =========================
+# 模型调用优化
+# =========================
+tenacity>=8.2.0          # LLM 调用自动重试 + 指数退避
+
+# =========================
+# RAG 检索优化依赖
+# =========================
+jieba>=0.42.1           # 中文分词，BM25 检索用
+rank-bm25>=0.2.2        # BM25 关键词检索算法
+# Reranking 使用 DashScope gte-rerank API，无需本地模型
+
+# =========================
+# 文档解析
+# =========================
+pypdf>=4.0.0            # PDF 解析
