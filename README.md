@@ -96,7 +96,7 @@ AI面试准备助手项目/
 │   ├── rag_query_prompt.txt
 │   ├── query_rewrite_prompt.txt
 │   ├── reference_answer_prompt.txt
-│   ├── resume_parse_prompt.txt
+│   ├── final_evaluation_prompt.txt
 │   ├── jd_parse_prompt.txt
 │   └── resume_parse_prompt.txt
 ├── ai_interview_assistant/ # 核心代码
