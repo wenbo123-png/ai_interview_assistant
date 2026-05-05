@@ -5,7 +5,7 @@
 - 控制台：精简格式，方便开发时快速扫读
   示例：14:30:05 [INFO] agent: 意图识别完成
 - 文件：详细格式，方便排查问题
-  示例：2025-05-04 14:30:05 | INFO | agent | react_agent.py:180 | 意图识别完成
+  示例：2025-05-04 14:30:05 | INFO | agent | wf_agent.py:180 | 意图识别完成
 """
 
 from __future__ import annotations

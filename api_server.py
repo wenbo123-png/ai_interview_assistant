@@ -21,7 +21,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
-from ai_interview_assistant.agent.react_agent import ReactAgent
+from ai_interview_assistant.agent.wf_agent import ReactAgent
 from ai_interview_assistant.storage import (
     generate_session_id,
     save_session,

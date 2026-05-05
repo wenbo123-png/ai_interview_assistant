@@ -30,7 +30,7 @@ class TestIntentCache:
 
     def _make_agent(self):
         """创建一个 ReactAgent 实例（需要环境变量可用）。"""
-        from ai_interview_assistant.agent.react_agent import ReactAgent
+        from ai_interview_assistant.agent.wf_agent import ReactAgent
         return ReactAgent()
 
     def test_cache_stores_result(self):
@@ -134,7 +134,7 @@ class TestSessionState:
 
     def test_roundtrip(self):
         """序列化再反序列化应保持数据一致。"""
-        from ai_interview_assistant.agent.react_agent import ReactAgent, AgentSessionState
+        from ai_interview_assistant.agent.wf_agent import ReactAgent, AgentSessionState
         agent = ReactAgent()
 
         # 设置一些状态

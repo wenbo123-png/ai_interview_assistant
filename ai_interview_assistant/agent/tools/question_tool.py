@@ -109,7 +109,7 @@ class QuestionTool:
     def _build_reference_answer(question: str, qtype: str, focus: str, ref_points: list[str]) -> str:
         """
         基于参考要点构造一个简洁的参考答案示例。
-        目标是给前端和 react_agent 一个可直接展示的答案，而不是长篇分析。
+        目标是给前端和 wf_agent 一个可直接展示的答案，而不是长篇分析。
         """
         q = question.strip()
         if not q:

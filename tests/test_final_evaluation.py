@@ -19,7 +19,7 @@ import pytest
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
-from ai_interview_assistant.agent.react_agent import ReactAgent
+from ai_interview_assistant.agent.wf_agent import ReactAgent
 
 
 # ---------- 共享测试数据 ----------
