@@ -134,8 +134,7 @@ AI面试准备助手项目/
 │   │   ├── vector_store.py   # 向量库管理（构建、检索、混合搜索）
 │   │   └── kb_builder.py     # 知识库构建
 │   ├── model/
-│   │   ├── factory.py        # 模型工厂（Chat + Embedding 单例）
-│   │   └── output_parser.py  # 输出解析
+│   │   └── factory.py        # 模型工厂（Chat + Embedding 单例）
 │   ├── utils/
 │   │   ├── config_handler.py # 配置加载
 │   │   ├── prompt_loader.py  # Prompt 加载
