@@ -3,7 +3,7 @@
 # =========================
 
 # 聊天模型
-chat_model_name: qwen3-max
+chat_model_name: qwen3.7-max
 
 # 向量化模型
 embedding_model_name: text-embedding-v4

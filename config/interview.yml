@@ -29,7 +29,7 @@ paths:
 # =========================
 model:
   # 聊天模型名称
-  chat_model_name: qwen3-max
+  chat_model_name: qwen3.7-max
 
   # 向量嵌入模型名称
   embedding_model_name: text-embedding-v4
