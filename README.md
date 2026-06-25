@@ -174,7 +174,7 @@ pip install -r requirements.txt
 
 ### 配置
 
-1. 在 `config/rag.yml` 中配置模型参数（默认使用 qwen3-max）
+1. 在 `config/rag.yml` 中配置模型参数
 2. 确保 DashScope API Key 已设置环境变量 `DASHSCOPE_API_KEY`
 
 ### 启动
