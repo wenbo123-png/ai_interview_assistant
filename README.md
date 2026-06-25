@@ -82,7 +82,7 @@ graph TB
 - **前端**：Streamlit
 - **后端**：FastAPI + Uvicorn
 - **Agent 框架**：LangChain（工作流编排 + LLM 意图分类）
-- **LLM**：通义千问 qwen3-max (DashScope)
+- **LLM**：通义千问 (DashScope)
 - **Embedding**：text-embedding-v4 (DashScope)
 - **向量数据库**：ChromaDB
 - **检索策略**：BM25 + 向量混合检索 + gte-rerank 精排 + 查询改写
